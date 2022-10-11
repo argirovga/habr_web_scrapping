@@ -1,15 +1,15 @@
 class Vacancy:
     def __init__(
-        self,
-        _company_name=None,
-        _vacancy_title=None,
-        _qualification=None,
-        _city=None,
-        _busyness=None,
-        _remote_work=None,
-        _salary_bottom=None,
-        _salary_top=None,
-        _skills=None,
+            self,
+            _company_name=None,
+            _vacancy_title=None,
+            _qualification=None,
+            _city=None,
+            _busyness=None,
+            _remote_work=None,
+            _salary_bottom=None,
+            _salary_top=None,
+            _skills=None,
     ):
         self.company_name = _company_name
         self.vacancy_title = _vacancy_title
@@ -21,9 +21,12 @@ class Vacancy:
         self.salary_top = _salary_top
         self.skills = _skills
 
+    def get_dictionary(self):
+        pass
+
     def __str__(self) -> str:
         return (
-            f"Company : {self.company_name}\nVacancy : {self.vacancy_title}\nQualification : {self.qualification}\n"
-            + f"Skills required : {self.skills}\nCity : {self.city}\nWork time : {self.busyness}\nRemote work : {self.remote_work}\n"
-            + f"Salary: from {self.salary_bottom} to {self.salary_top} ₽\n"
+                f"Company : {self.company_name}\nVacancy : {self.vacancy_title}\nQualification : {self.qualification}\n"
+                + f"Skills required : {self.skills}\nCity : {self.city}\nWork time : {self.busyness}\nRemote work : {self.remote_work}\n"
+                + f"Salary: from {self.salary_bottom} to {self.salary_top} ₽\n"
         )
