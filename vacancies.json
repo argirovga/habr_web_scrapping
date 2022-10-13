@@ -1,0 +1,498 @@
+{
+  "1": {
+    "Company": "Plenexy",
+    "Vacancy name": "Middle/Senior Laravel developer (Backend/Fullstack)",
+    "Qualification": "Middle",
+    "Skills": [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "JavaScript",
+      "Vue.js",
+      "Nuxt.js",
+      "Git"
+    ],
+    "City": null,
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 120000,
+    "Salary top": null
+  },
+  "2": {
+    "Company": "Saints Synergy",
+    "Vacancy name": "Ведущий программист 1С ",
+    "Qualification": "Lead",
+    "Skills": [
+      "1С-Битрикс",
+      "Разработка под 1С",
+      "Администрирование 1С",
+      "Битрикс24"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 200000,
+    "Salary top": 250000
+  },
+  "3": {
+    "Company": "БИО-ТОН",
+    "Vacancy name": "Senior  C# ASP.Net Core Developer",
+    "Qualification": "Senior",
+    "Skills": [
+      "PostgreSQL",
+      "Веб-разработка",
+      "JavaScript",
+      "Высоконагруженные системы",
+      "ASP.NET MVC",
+      "Angular.js",
+      "React",
+      "C#",
+      ".NET Core",
+      "Docker"
+    ],
+    "City": [
+      "Самара"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 200000,
+    "Salary top": 250000
+  },
+  "4": {
+    "Company": "БЮРО 1440",
+    "Vacancy name": "QA engineer",
+    "Qualification": "Middle",
+    "Skills": [
+      "Python",
+      "C++",
+      "Linux",
+      "ООП",
+      "Matlab",
+      "Jenkins"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": null,
+    "Salary top": 200000
+  },
+  "5": {
+    "Company": "SberDevices",
+    "Vacancy name": "Python разработчик (NLP Platform)",
+    "Qualification": "Senior",
+    "Skills": [
+      "Python",
+      "PostgreSQL",
+      "TensorFlow",
+      "PyTorch",
+      "NumPy",
+      "Обработка естественного языка",
+      "Apache Kafka",
+      "Docker",
+      "Kubernetes"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 200000,
+    "Salary top": 400000
+  },
+  "6": {
+    "Company": "Dostaевский",
+    "Vacancy name": "Специалист по информационной безопасности",
+    "Qualification": "Senior",
+    "Skills": [
+      "Информационная безопасность",
+      "Администрирование Linux",
+      "Администрирование Windows",
+      "Администрирование сетей"
+    ],
+    "City": [
+      "Санкт-Петербург"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 120000,
+    "Salary top": 120000
+  },
+  "7": {
+    "Company": "CarPrice",
+    "Vacancy name": "Разработчик PHP/Go",
+    "Qualification": "Middle",
+    "Skills": [
+      "PHP",
+      "Golang",
+      "MySQL",
+      "Docker",
+      "Git",
+      "Bash"
+    ],
+    "City": [
+      "Алматы"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 110000,
+    "Salary top": null
+  },
+  "8": {
+    "Company": "Сбер",
+    "Vacancy name": "System Analyst (SberTeamID)",
+    "Qualification": "Senior",
+    "Skills": [
+      "API Интерфейсы",
+      "Java"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 180000,
+    "Salary top": null
+  },
+  "9": {
+    "Company": "Vachark",
+    "Vacancy name": "Sales Development Representative",
+    "Qualification": "Junior",
+    "Skills": [
+      "Управление проектами",
+      "Продажи"
+    ],
+    "City": null,
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 64021,
+    "Salary top": 96032
+  },
+  "10": {
+    "Company": "Profi",
+    "Vacancy name": "Middle/Senior Node JS Developer",
+    "Qualification": "Senior",
+    "Skills": [
+      "Node.js",
+      "TypeScript",
+      "Express",
+      "JavaScript",
+      "PostgreSQL"
+    ],
+    "City": null,
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 256086,
+    "Salary top": 416140
+  },
+  "11": {
+    "Company": "ZeroX",
+    "Vacancy name": "PHP разработчик (Senior)",
+    "Qualification": "Senior",
+    "Skills": [
+      "JavaScript",
+      "SQL",
+      "Git",
+      "PHP",
+      "Laravel",
+      "Node.js",
+      "Vue.js",
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ],
+    "City": [
+      "Санкт-Петербург"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 300000,
+    "Salary top": null
+  },
+  "12": {
+    "Company": "ZeroX",
+    "Vacancy name": "Senior Vue Developer",
+    "Qualification": "Senior",
+    "Skills": [
+      "Node.js",
+      "JavaScript",
+      "PHP",
+      "Laravel",
+      "Git",
+      "MySQL",
+      "Kubernetes",
+      "Vue.js",
+      "HTML",
+      "TypeScript"
+    ],
+    "City": null,
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 250000,
+    "Salary top": null
+  },
+  "13": {
+    "Company": "HashEx",
+    "Vacancy name": "Smart Contract Developer/Solidity Developer (Remote)",
+    "Qualification": "Middle",
+    "Skills": [
+      "Solidity",
+      "Blockchain",
+      "Английский язык",
+      "Git",
+      "Ethereum"
+    ],
+    "City": null,
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 192064,
+    "Salary top": null
+  },
+  "14": {
+    "Company": "Almak IT",
+    "Vacancy name": "Frontend разработчик",
+    "Qualification": "Middle",
+    "Skills": [
+      "JavaScript",
+      "React",
+      "TypeScript",
+      "Redux",
+      "CSS",
+      "HTML"
+    ],
+    "City": [
+      "Санкт-Петербург"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 100000,
+    "Salary top": 150000
+  },
+  "15": {
+    "Company": "Сбер",
+    "Vacancy name": "SRE (DevOps) Kubernetes",
+    "Qualification": "Senior",
+    "Skills": [
+      "Linux",
+      "PostgreSQL",
+      "Docker",
+      "Kubernetes",
+      "Python",
+      "Golang",
+      "Git"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 300000,
+    "Salary top": null
+  },
+  "16": {
+    "Company": "Sportmaster Lab",
+    "Vacancy name": "Java-разработчик",
+    "Qualification": "Senior",
+    "Skills": [
+      "Java",
+      "Java Spring Framework",
+      "NoSQL",
+      "GitLab",
+      "Docker"
+    ],
+    "City": [
+      "Москва",
+      "Санкт-Петербург"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 200000,
+    "Salary top": 400000
+  },
+  "17": {
+    "Company": "Сбер",
+    "Vacancy name": "Технический менеджер в сервис Compute",
+    "Qualification": "Lead",
+    "Skills": [
+      "Python",
+      "Linux",
+      "Docker",
+      "Kubernetes",
+      "PostgreSQL"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 300000,
+    "Salary top": null
+  },
+  "18": {
+    "Company": "Факт",
+    "Vacancy name": "Frontend-разработчик (Vue.js)",
+    "Qualification": "Middle",
+    "Skills": [
+      "CSS",
+      "HTML",
+      "JavaScript",
+      "Кроссбраузерная верстка",
+      "Валидная верстка",
+      "Адаптивная верстка",
+      "Git",
+      "Vue.js",
+      "Nuxt.js"
+    ],
+    "City": [
+      "Ростов-на-Дону",
+      "Самара",
+      "Челябинск"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 80000,
+    "Salary top": 140000
+  },
+  "19": {
+    "Company": "АйТи Бастион",
+    "Vacancy name": "Инженер технической поддержки",
+    "Qualification": "Middle",
+    "Skills": [
+      "Linux",
+      "Администрирование Windows",
+      "Техническая поддержка",
+      "Администрирование сетей"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 120000,
+    "Salary top": 140000
+  },
+  "20": {
+    "Company": "YOURNEEDS",
+    "Vacancy name": "Fullstack / Backend разработчик PHP/JS",
+    "Qualification": "Middle",
+    "Skills": [
+      "PHP",
+      "JavaScript",
+      "Laravel",
+      "Vue.js",
+      "SQL",
+      "Linux",
+      "PostgreSQL",
+      "Docker",
+      "ООП",
+      "Redis"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 100000,
+    "Salary top": null
+  },
+  "21": {
+    "Company": "YOURNEEDS",
+    "Vacancy name": "Frontend developer/Front-разработчик/Верстальщик",
+    "Qualification": "Middle",
+    "Skills": [
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "Vue.js",
+      "PHP",
+      "Linux",
+      "Docker",
+      "Nginx",
+      "API Интерфейсы"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 80000,
+    "Salary top": null
+  },
+  "22": {
+    "Company": "KazanExpress",
+    "Vacancy name": "Lead Go Developer",
+    "Qualification": "Lead",
+    "Skills": [
+      "Golang",
+      "Docker",
+      "Apache Kafka",
+      "Elasticsearch"
+    ],
+    "City": [
+      "Москва",
+      "Санкт-Петербург",
+      "Казань"
+    ],
+    "Work time": null,
+    "Remote work": true,
+    "Salary bottom": 300000,
+    "Salary top": 500000
+  },
+  "23": {
+    "Company": "ЛАНИТ",
+    "Vacancy name": "Middle Разработчик C#",
+    "Qualification": null,
+    "Skills": [
+      "SQL",
+      ".NET",
+      "C#",
+      ".NET Core"
+    ],
+    "City": [
+      "Москва"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": null,
+    "Salary top": 150000
+  },
+  "24": {
+    "Company": "BookedBy",
+    "Vacancy name": "Senior React Native developer (to Serbia/Canada)",
+    "Qualification": "Senior",
+    "Skills": [
+      "React Native",
+      "Redux",
+      "TypeScript",
+      "Git",
+      "Scrum",
+      "Webpack",
+      "Babel",
+      "REST",
+      "Многопоточность"
+    ],
+    "City": null,
+    "Work time": "Полный рабочий день",
+    "Remote work": true,
+    "Salary bottom": 320108,
+    "Salary top": null
+  },
+  "25": {
+    "Company": "Сбер",
+    "Vacancy name": "GO разработчик",
+    "Qualification": "Senior",
+    "Skills": [
+      "Golang"
+    ],
+    "City": [
+      "Нижний Новгород"
+    ],
+    "Work time": "Полный рабочий день",
+    "Remote work": null,
+    "Salary bottom": 220000,
+    "Salary top": null
+  }
+}

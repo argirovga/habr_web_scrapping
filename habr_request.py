@@ -10,45 +10,53 @@ from extract_functions import (
 )
 from models import Vacancy
 
-for page in range(1, 3):
 
-    url = f"https://career.habr.com/vacancies?page={page}&salary=10000&type=al"
-    answer = requests.get(url)
-    soup = BeautifulSoup(answer.content, "html.parser")
-    job_elements = soup.find_all("div", {"class": "vacancy-card__info"})
+def get_vacancies(number_of_pages: int) -> dict:
+    dict_vancies = {}
+    id = 0
+    for page in range(1, number_of_pages + 1):
 
-    for job_element in job_elements:
-        company_name = (
-            job_element.find("div", {"class": "vacancy-card__company"}).find("a").text
-        )
-        title = job_element.find("div", {"class": "vacancy-card__title"}).text
+        url = f"https://career.habr.com/vacancies?page={page}&salary=10000&type=al"
+        answer = requests.get(url)
+        soup = BeautifulSoup(answer.content, "html.parser")
+        job_elements = soup.find_all("div", {"class": "vacancy-card__info"})
 
-        salary_meta = job_element.find("div", {"class": "basic-salary"}).text
-        salary_bottom = pick_salary_bottom_info(salary_meta.split())
-        salary_top = pick_salary_top_info(salary_meta.split())
+        for job_element in job_elements:
+            company_name = (
+                job_element.find("div", {"class": "vacancy-card__company"}).find("a").text
+            )
+            title = job_element.find("div", {"class": "vacancy-card__title"}).text
 
-        skills_meta = job_element.find(
-            "div", {"class": "vacancy-card__skills"}
-        ).text.split(" • ")
-        qualification = pick_qualification_info(skills_meta)
-        skills = skills_meta[1:]
+            salary_meta = job_element.find("div", {"class": "basic-salary"}).text
+            salary_bottom = pick_salary_bottom_info(salary_meta.split())
+            salary_top = pick_salary_top_info(salary_meta.split())
 
-        vacancy_meta = job_element.find(
-            "div", {"class": "vacancy-card__meta"}
-        ).text.split(" • ")
-        city = finding_city(vacancy_meta)
-        busyness = finding_busynes_info(vacancy_meta)
-        remote_work = finding_remote_info(vacancy_meta)
+            skills_meta = job_element.find(
+                "div", {"class": "vacancy-card__skills"}
+            ).text.split(" • ")
+            qualification = pick_qualification_info(skills_meta)
+            skills = skills_meta[1:]
 
-        vac = Vacancy(
-            company_name,
-            title,
-            qualification,
-            city,
-            busyness,
-            remote_work,
-            salary_bottom,
-            salary_top,
-            skills,
-        )
-        print(vac)
+            vacancy_meta = job_element.find(
+                "div", {"class": "vacancy-card__meta"}
+            ).text.split(" • ")
+            city = finding_city(vacancy_meta)
+            busyness = finding_busynes_info(vacancy_meta)
+            remote_work = finding_remote_info(vacancy_meta)
+
+            vac = Vacancy(
+                company_name,
+                title,
+                qualification,
+                city,
+                busyness,
+                remote_work,
+                salary_bottom,
+                salary_top,
+                skills,
+            )
+
+            id += 1
+            dict_vancies[id] = vac.return_dict()
+
+    return dict_vancies

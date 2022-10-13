@@ -30,3 +30,18 @@ class Vacancy:
                 + f"Skills required : {self.skills}\nCity : {self.city}\nWork time : {self.busyness}\nRemote work : {self.remote_work}\n"
                 + f"Salary: from {self.salary_bottom} to {self.salary_top} ₽\n"
         )
+
+    def return_dict(self):
+        return (
+            {
+                "Company" : self.company_name,
+                "Vacancy name" : self.vacancy_title,
+                "Qualification" : self.qualification,
+                "Skills" : self.skills,
+                "City" : self.city,
+                "Work time" : self.busyness,
+                "Remote work" : self.remote_work,
+                "Salary bottom" : self.salary_bottom,
+                "Salary top" : self.salary_top
+            }
+        )
