@@ -44,6 +44,13 @@ def get_vacancies(number_of_pages: int) -> dict:
             busyness = finding_busynes_info(vacancy_meta)
             remote_work = finding_remote_info(vacancy_meta)
 
+            link = job_element.find("a", {"class" : "vacancy-card__title-link"})["href"]
+            url_text = f"https://career.habr.com/" + link
+            answer = requests.get(url_text)
+            soup = BeautifulSoup(answer.content, "html.parser")
+            text = soup.find("div", {"class" : "collapsible-description__content"}).text
+
+
             vac = Vacancy(
                 company_name,
                 title,
@@ -54,6 +61,7 @@ def get_vacancies(number_of_pages: int) -> dict:
                 salary_bottom,
                 salary_top,
                 skills,
+                text
             )
 
             id += 1

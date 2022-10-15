@@ -10,6 +10,7 @@ class Vacancy:
             _salary_bottom=None,
             _salary_top=None,
             _skills=None,
+            _description=None
     ):
         self.company_name = _company_name
         self.vacancy_title = _vacancy_title
@@ -20,6 +21,7 @@ class Vacancy:
         self.salary_bottom = _salary_bottom
         self.salary_top = _salary_top
         self.skills = _skills
+        self.description = _description
 
     def get_dictionary(self):
         pass
@@ -28,7 +30,7 @@ class Vacancy:
         return (
                 f"Company : {self.company_name}\nVacancy : {self.vacancy_title}\nQualification : {self.qualification}\n"
                 + f"Skills required : {self.skills}\nCity : {self.city}\nWork time : {self.busyness}\nRemote work : {self.remote_work}\n"
-                + f"Salary: from {self.salary_bottom} to {self.salary_top} ₽\n"
+                + f"Salary: from {self.salary_bottom} to {self.salary_top} ₽\n" + f"description : {self.description}"
         )
 
     def return_dict(self):
@@ -42,6 +44,7 @@ class Vacancy:
                 "Work time" : self.busyness,
                 "Remote work" : self.remote_work,
                 "Salary bottom" : self.salary_bottom,
-                "Salary top" : self.salary_top
+                "Salary top" : self.salary_top,
+                "Description" : self.description
             }
         )
