@@ -6,7 +6,8 @@ from extract_functions import (
     pick_salary_top_info,
     pick_qualification_info,
     finding_city,
-    finding_busynes_info, finding_remote_info,
+    finding_busynes_info,
+    finding_remote_info,
 )
 from models.models import Vacancy
 
@@ -23,7 +24,9 @@ def get_vacancies(number_of_pages: int) -> dict:
 
         for job_element in job_elements:
             company_name = (
-                job_element.find("div", {"class": "vacancy-card__company"}).find("a").text
+                job_element.find("div", {"class": "vacancy-card__company"})
+                .find("a")
+                .text
             )
             title = job_element.find("div", {"class": "vacancy-card__title"}).text
 
@@ -44,12 +47,11 @@ def get_vacancies(number_of_pages: int) -> dict:
             busyness = finding_busynes_info(vacancy_meta)
             remote_work = finding_remote_info(vacancy_meta)
 
-            link = job_element.find("a", {"class" : "vacancy-card__title-link"})["href"]
+            link = job_element.find("a", {"class": "vacancy-card__title-link"})["href"]
             url_text = f"https://career.habr.com/" + link
             answer = requests.get(url_text)
             soup = BeautifulSoup(answer.content, "html.parser")
-            text = soup.find("div", {"class" : "collapsible-description__content"}).text
-
+            text = soup.find("div", {"class": "collapsible-description__content"}).text
 
             vac = Vacancy(
                 company_name,
@@ -61,7 +63,7 @@ def get_vacancies(number_of_pages: int) -> dict:
                 salary_bottom,
                 salary_top,
                 skills,
-                text
+                text,
             )
 
             id += 1
