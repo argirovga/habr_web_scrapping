@@ -2,6 +2,7 @@ import json
 import re
 from string import punctuation
 from scipy.spatial.distance import cosine, euclidean, hamming
+import pprint
 
 with open("files/vacancies2.json", "r", encoding="utf8") as file:
     lines = json.loads(file.read())
@@ -53,7 +54,9 @@ def compare_text():
 def print_to_most_similar_vacancies():
     id1, id2 = compare_text()
 
-    print(lines[str(id1)], "\n_____________\n", lines[str(id2)])
+    pprint.pprint(lines[str(id1)])
+    print("________________________________")
+    pprint.pprint(lines[str(id2)])
 
 
 print_to_most_similar_vacancies()
