@@ -1,19 +1,19 @@
 import json
 import re
 from string import punctuation
-with open("vacancies2.json", "r") as file:
+with open("files/vacancies2.json", "r", encoding="utf8") as file:
     lines = json.loads(file.read())
 
 
-def get_words(line: str):
+def get_words_list(line: str):
     line = line.lower()
     line = re.sub(f"[{punctuation}]", "", line)
 
     return line.split()
 
 
-def get_matrix():
-    texts = list(map(get_words, [i["Description"] for i in lines.values()]))
+def get_matrix_of_vectors():
+    texts = list(map(get_words_list, [i["Description"] for i in lines.values()]))
     unique_words = set(sum(texts, []))
     dict_words = {key : i for i, key in enumerate(unique_words)}
     matrix = []
@@ -37,7 +37,7 @@ def hamming_distance(vec1, vec2):
 
 
 def compare_text():
-    matrix = get_matrix()
+    matrix = get_matrix_of_vectors()
     dict_distances = dict()
 
     for i in range(len(matrix)):
@@ -50,9 +50,6 @@ def compare_text():
         dict_distances[i] /= max_value
 
     print(sorted([(k, v) for k, v in dict_distances.items()], key=lambda x: x[1]))
-    print(lines["21"])
-    print(lines["11"])
-    print(lines["10"])
 
 
 compare_text()

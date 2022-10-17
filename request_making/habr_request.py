@@ -8,7 +8,7 @@ from extract_functions import (
     finding_city,
     finding_busynes_info, finding_remote_info,
 )
-from models import Vacancy
+from models.models import Vacancy
 
 
 def get_vacancies(number_of_pages: int) -> dict:
